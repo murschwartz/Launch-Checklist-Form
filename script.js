@@ -63,7 +63,7 @@ window.addEventListener("load", function(){
          launchStatus.style.color = "red";
       };
       if(cargoMassInput.value > 10000){
-         faultyItems.style.visibility = "visble";
+         faultyItems.style.visibility = "visible";
          cargoStatus.innerHTML = "Too much mass for take off.";
          launchStatus.innerHTML = "Shuttle not ready for launch";
          launchStatus.style.color = "red";
