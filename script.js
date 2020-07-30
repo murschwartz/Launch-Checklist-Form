@@ -67,7 +67,13 @@ window.addEventListener("load", function(){
          cargoStatus.innerHTML = "Too much mass for take off.";
          launchStatus.innerHTML = "Shuttle not ready for launch";
          launchStatus.style.color = "red";
-      } else {
+      };
+      if(fuelLevelInput.value <= 10000 && cargoMassInput.value < 10000){
+         faultyItems.style.visibility = "visible";
+         launchStatus.innerHTML = "Shuttle not ready for launch";
+         launchStatus.style.color = "red";
+      }
+      else {
          launchStatus.innerHTML = "Shuttle is ready for launch";
          launchStatus.style.color = "green";
          faultyItems.style.visibility = "visible";
